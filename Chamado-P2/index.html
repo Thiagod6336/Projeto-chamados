@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Chamados</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Chamados</h1>
+    </header>
+    <main>
+        <section id="novo-chamado" class="card">
+            <h2>Criar Novo Chamado</h2>
+            <form id="chamado-form">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="TI">TI</option>
+                    <option value="Manutenção">Manutenção</option>
+                    <option value="RH">RH</option>
+                </select>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+                <button type="submit">Adicionar Chamado</button>
+            </form>
+        </section>
+        <section id="lista-chamados" class="card">
+            <h2>Lista de Chamados</h2>
+            <div id="diretorios">
+                <h3><i class="fas fa-laptop"></i> TI</h3>
+                <ul id="chamados-TI"></ul>
+                <h3><i class="fas fa-tools"></i> Manutenção</h3>
+                <ul id="chamados-Manutencao"></ul>
+                <h3><i class="fas fa-user-tie"></i> RH</h3>
+                <ul id="chamados-RH"></ul>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sistema de Chamados. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
