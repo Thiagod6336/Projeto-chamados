@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.script.js" defer></script>
+    <title>Cadastro de chamado</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Chamado</h1>
+        <menu>
+            <a href="index.html">Home</a>
+            <a href="lista_chamados.html">Lista de chamados</a>
+            <a href="cadastro_chamado.html">Criar chamado</a>
+        </menu>
+    </header>
+
+    <main>
+        <section id="novo-chamado" class="card">
+            <h2>Criar Novo Chamado</h2>
+            <form id="chamado-form">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required>
+                    <option value="TI">TI</option>
+                    <option value="Manutenção">Manutenção</option>
+                    <option value="RH">RH</option>
+                </select>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" required>
+                <!-- <label for="usuario">Usuario:</label>
+                <input type="text" name="usuario" placeholder="Nome do Usuário" required> -->
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" required></textarea>
+                <button type="submit">Adicionar Chamado</button>
+            </form>
+        </section>
+       
+    </main>
+    
+</body>
+</html>

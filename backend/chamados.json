@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "titulo": "Problema no servidor",
+    "descricao": "O servidor principal está offline.",
+    "categoria": "TI",
+    "status": "Aberto",
+    "dataCriacao": "2024-11-27T10:00:00Z"
+  },
+  {
+    "id": 2,
+    "titulo": "Troca de lâmpada",
+    "descricao": "A lâmpada do escritório está queimada.",
+    "categoria": "Manutenção",
+    "status": "Pendente",
+    "dataCriacao": "2024-11-26T15:30:00Z"
+  },
+  {
+    "id": 3,
+    "titulo": "Energia",
+    "descricao": "Sem energia na sala",
+    "categoria": "Manutenção",
+    "status": "Aberto",
+    "dataCriacao": "2024-11-27T15:31:20.524Z"
+  }
+]
