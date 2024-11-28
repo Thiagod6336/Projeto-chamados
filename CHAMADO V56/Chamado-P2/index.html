@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Chamados</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Sistema de Chamados</h1>
+        <h3>Facilitando a Solução de Problemas e a Comunicação</h3>
+    </header>
+
+    <main>
+        <!-- Seção para criação de novos chamados -->
+        <section id="novo-chamado" class="card">
+            <h2>Criar Novo Chamado</h2>
+            <form id="chamado-form" aria-labelledby="novo-chamado">
+                <label for="categoria">Categoria:</label>
+                <select id="categoria" name="categoria" required aria-label="Selecione a categoria do chamado">
+                    <option value="TI">TI</option>
+                    <option value="Manutenção">Manutenção</option>
+                    <option value="RH">RH</option>
+                </select>
+
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo" placeholder="Ex.: Computador não liga" required aria-label="Título do chamado">
+
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao" placeholder="Descreva o problema detalhadamente" required aria-label="Descrição do problema"></textarea>
+
+                <button type="submit">Adicionar Chamado</button>
+            </form>
+        </section>
+
+        <!-- Seção para listar os chamados -->
+        <section id="lista-chamados" class="card">
+            <h2>Lista de Chamados</h2>
+            <div id="diretorios" aria-labelledby="lista-chamados">
+                <h3><i class="fas fa-laptop" aria-hidden="true"></i> TI</h3>
+                <ul id="chamados-TI" aria-label="Chamados da categoria TI"></ul>
+
+                <h3><i class="fas fa-tools" aria-hidden="true"></i> Manutenção</h3>
+                <ul id="chamados-Manutencao" aria-label="Chamados da categoria Manutenção"></ul>
+
+                <h3><i class="fas fa-user-tie" aria-hidden="true"></i> RH</h3>
+                <ul id="chamados-RH" aria-label="Chamados da categoria RH"></ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sistema de Chamados. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
